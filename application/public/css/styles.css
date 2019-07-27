@@ -1,0 +1,20 @@
+.icon {
+    padding: 20px;
+    background: #077BFF;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
