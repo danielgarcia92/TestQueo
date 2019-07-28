@@ -40,6 +40,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('companies.index') }}">Empresas<span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('employees.index') }}">Empleados<span class="sr-only">(current)</span></a>
+                </li>
             </ul>
         </div>
     </nav>

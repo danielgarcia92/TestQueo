@@ -40,7 +40,7 @@
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">Nueva Empresa</button>
-                <a href="{{ route('companies.index') }}" class="btn btn-link">Regresar al listado de usuarios</a>
+                <a href="{{ route('companies.index') }}" class="btn btn-link">Regresar al listado de empresas</a>
             </form>
         </div>
 
