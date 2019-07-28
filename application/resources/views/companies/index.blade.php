@@ -22,7 +22,7 @@
             </tr>
             </thead>
             <tbody>
-            @foreach ($companies as $company)
+            @foreach ($companies as $valor => $company)
                 <tr>
                     <th>{{ $company->id }}</th>
                     <td>{{ $company->name }}</td>
@@ -32,8 +32,10 @@
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
                             <a href="{{  route('companies.show', $company)  }}"><i class="fas fa-eye btn btn-link"></i></a>
-                            <a href="{{  route('companies.edit', $company)  }}"><i class="fas fa-edit btn btn-link"></i></a>|
-                            <button type="submit" class="btn btn-link"><i class="fas fa-trash-alt btn btn-link"></i></button>
+                            <a href="{{  route('companies.edit', $company)  }}"><i class="fas fa-edit btn btn-link"></i></a>
+                            @if ($company->employees->isEmpty())
+                                <button type="submit" class="btn btn-link"><i class="fas fa-trash-alt btn btn-link"></i></button>
+                            @endif
                         </form>
                     </td>
                 </tr>
