@@ -4,10 +4,16 @@
 
 ## Considerations
 
-> You have to create 2 databases; one for the project and the another one to use TDD.
+> Install composer inside folder application
 
 ``` bash
-CREATE DATABASE queo;
+cd application
+composer install
+```
+
+> You have to create a database to use TDD.
+
+``` bash
 CREATE DATABASE queo_test;
 ```
 
