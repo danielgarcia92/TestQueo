@@ -15,9 +15,9 @@ class Employee extends Model
         'first_name', 'last_name', 'company_id', 'email', 'phone'
     ];
 
-    public function companies()
+    public function company()
     {
-        return $this->hasMany(Company::class);
+        return $this->belongsTo(Company::class);
     }
 
     public static function findByEmail($email)
